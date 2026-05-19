@@ -1,8 +1,7 @@
 # Impulse Dungeon Game
 
 ## Requirements
-- Go 1.25.0 or newer.
-- No external dependencies are required.
+- Go 1.25.0.
 - Configuration must be provided as a JSON file.
 - Events must be provided as a text file, one event per line.
 
@@ -26,7 +25,7 @@ go run . path/to/config.json path/to/events
 ```
 
 ## Test
-Run all unit tests:
+Run unit tests:
 
 ```bash
 go test ./...
