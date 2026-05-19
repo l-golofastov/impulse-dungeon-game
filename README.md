@@ -1,3 +1,37 @@
+# Impulse Dungeon Game
+
+## Requirements
+- Go 1.25.0 or newer.
+- No external dependencies are required.
+- Configuration must be provided as a JSON file.
+- Events must be provided as a text file, one event per line.
+
+## Run
+By default, the program reads `config.json` and `events` from the current directory:
+
+```bash
+go run .
+```
+
+You can pass only a custom config path. In this case, events are still read from `events`:
+
+```bash
+go run . path/to/config.json
+```
+
+You can also pass both config and events paths:
+
+```bash
+go run . path/to/config.json path/to/events
+```
+
+## Test
+Run all unit tests:
+
+```bash
+go test ./...
+```
+
 # System prototype
 The prototype must be able to work with a configuration file and a set of external events of a certain format.
 Solution should contain golang (1.22 or newer) source file/files and unit tests (optional)
